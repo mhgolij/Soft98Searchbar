@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <title>Search</title>
+    <link rel="stylesheet" href="./css/search.css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
+    
+
+</head>
+<body>
+    <header>
+        <nav>
+            <i id="searcIcon" class="fa fa-search fa-4x" onclick="searchClick()"></i>
+            <form onmouseover="mouseIn()"
+             onmouseout="mouseOut()"
+            >
+                <div>
+                    <div id="cover"></div>
+                    <input type="search" placeholder="جستجو..." 
+                    onkeyup="changeInput()" onfocus="focusIn()" 
+                     onblur="focusOut()"/>
+                </div>
+                <div id="first-div">
+                    <a href="#">
+                        <div class="float">
+                            <img src="./img/firefox.png" >
+                            <span>
+                                Firefox
+                            </span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="float">
+                            <img src="./img/winrar.png" >
+                            <span>
+                                Winrar
+                            </span>
+                        </div>
+                    </a><a href="#">
+                        <div class="float">
+                            <img src="./img/Chrome.png" >
+                            <span>
+                                Chrome
+                            </span>
+                        </div>
+                    </a><a href="#">
+                        <div class="float">
+                            <img src="./img/IDM.png" >
+                            <span>
+                                IDM
+                            </span>
+                        </div>
+                    </a><a href="#">
+                        <div class="float">
+                            <img src="./img/edge.png" >
+                            <span>
+                                Edge
+                            </span>
+                        </div>
+                    </a><a href="#">
+                        <div class="float">
+                            <img src="./img/TagScanner.png" >
+                            <span>
+                                TagScanner
+                            </span>
+                        </div>
+                    </a><a href="#">
+                        <div class="float">
+                            <img src="./img/Drive.png" >
+                            <span>
+                                Drive
+                            </span>
+                        </div>
+                    </a><a href="#">
+                        <div class="float">
+                            <img src="./img/aimp.png" >
+                            <span>
+                                AIMP
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div id="second-div">
+                    <div class="result">
+                        <img src="./img/firefox.png" >
+                        <a href="#">
+                            <i class="fa fa-windows"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-apple"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-linux"></i>
+                        </a>
+                        <a href="#" class="result-title">
+                            firefox 81.0.1
+                        </a>
+                    </div>
+                    <div class="result">
+                        <img src="./img/winrar.png" >
+                        <a href="#">
+                            <i class="fa fa-windows"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-apple"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-linux"></i>
+                        </a>
+                        <a href="#" class="result-title">
+                            winrar 5.0.1
+                        </a>
+                    </div>
+                    <div class="result">
+                        <img src="./img/Chrome.png" >
+                        <a href="#">
+                            <i class="fa fa-windows"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-apple"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-linux"></i>
+                        </a>
+                        <a href="#" class="result-title">
+                            Chrome 60.1
+                        </a>
+                    </div>
+                    <div class="result">
+                        <img src="./img/IDM.png" >
+                        <a href="#">
+                            <i class="fa fa-windows"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-apple"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-linux"></i>
+                        </a>
+                        <a href="#" class="result-title">
+                            Internet Download Manager 7.0.1
+                        </a>
+                    </div>
+                    <div class="result">
+                        <img src="./img/edge.png" >
+                        <a href="#">
+                            <i class="fa fa-windows"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-apple"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-linux"></i>
+                        </a>
+                        <a href="#" class="result-title">
+                            Edge 50
+                        </a>
+                    </div>
+                    <div class="result">
+                        <img src="./img/TagScanner.png" >
+                        <a href="#">
+                            <i class="fa fa-windows"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-apple"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-linux"></i>
+                        </a>
+                        <a href="#" class="result-title">
+                            TagScanner 0.0.1
+                        </a>
+                    </div>
+                    <div class="result">
+                        <img src="./img/Drive.png" >
+                        <a href="#">
+                            <i class="fa fa-windows"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-apple"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-linux"></i>
+                        </a>
+                        <a href="#" class="result-title">
+                            Drive rc42b
+                        </a>
+                    </div>
+                    <div class="result">
+                        <img src="./img/aimp.png" >
+                        <a href="#">
+                            <i class="fa fa-windows"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-apple"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-linux"></i>
+                        </a>
+                        <a href="#" class="result-title">
+                            AIMP 8.0.1
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </nav>
+    </header>
+    <script src="js/javaScript.js"></script>
+</body>
+</html>

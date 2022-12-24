@@ -1,0 +1,136 @@
+@font-face{
+    font-family : "dirooz";
+    src: url('../fonts/dirooz.woff');
+    
+}
+*{
+    font-family: "dirooz";
+    box-sizing: border-box;
+    scrollbar-width:none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form {
+    display: none;
+    opacity: 0;
+    transition-duration: 1s;
+    position: relative;
+}
+#searcIcon{
+    display: inline;
+    opacity: 1;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+form div:first-child{
+    position: relative;
+}
+input{
+    font-family: "dirooz";
+    font-size: 1.2rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid gainsboro;
+    border-radius: 0.3125rem;
+    width: 37.5rem;
+}
+input:focus{
+    border: 1px solid green;
+}
+form #cover{
+    position: absolute;
+    background-color: hotpink;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0.3125rem;
+    transition-duration: 0.5s;
+}
+
+#first-div img{
+    display: block;
+    margin: 0 auto 0.9375rem;
+    background-color: whitesmoke;
+    padding: 0.625rem;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid whitesmoke;
+    border-radius: 0.625rem;
+}
+.float{
+    display: inline-block;
+    width: 5.625rem;
+    text-align: center;
+    margin: 0.625rem 0.3125rem;
+}
+
+#first-div{
+    white-space: nowrap;
+    min-width: 18.57rem;
+    max-width: 37.5rem;
+    overflow: auto;
+    margin-top: 0.3125rem;
+    border-radius: 5px;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-bottom: 1px solid red;
+}
+#first-div::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#second-div {
+    border-radius: 0.3125rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 12.9375rem;
+    bottom: 0;
+    min-width: 18.75rem;
+    max-width: 37.5rem;
+    max-height: 15.625rem;
+    background-color: lightgrey;
+    overflow-y: auto;
+    transition-duration: 1s;
+}
+#second-div img{
+    width: 2.5rem;
+    height: 2.5rem;
+    vertical-align: middle;
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+}
+#second-div i{
+    color: gray;
+}
+#second-div i:hover{
+    color: black;
+
+}
+.result-title{
+    margin-right: 2.5rem;
+    text-align: left;
+    display: inline-block;
+    width:67%;
+
+}
+.result{
+    padding: 0.9375rem 0;
+    border-bottom: 1px solid lightseagreen;
+    margin: 0 -1.25rem;
+}
+.result:last-child{
+    border: none;
+}
+.result:hover{
+    background-color: rgba(100, 119, 94, 0.575);
+}
